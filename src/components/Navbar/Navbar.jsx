@@ -24,15 +24,15 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="pt-4 lg:pt-8 pb-4 sm:pb-8">
+    <nav className="pt-4 lg:pt-8 pb-4 sm:pb-12">
       <div className="flex justify-between items-center">
         <div className="sm:w-auto">
           <a href="/">
-            <img className="max-w-[16rem]" src={logo} alt="Graphic Digital" />
+            <img className="max-w-[16rem] ml-4" src={logo} alt="Graphic Digital" />
           </a>
         </div>
-        <div className="hidden lg:flex gap-7 justify-center items-center">{links}</div>
-        <div className="lg:hidden">
+        <div className="hidden md:flex gap-7 justify-center items-center">{links}</div>
+        <div className="md:hidden">
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
