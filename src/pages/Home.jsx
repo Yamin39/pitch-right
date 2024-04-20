@@ -1,4 +1,5 @@
 import Banner from "../components/Banner/Banner";
+import MoreServices from "../components/MoreServices/MoreServices";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
         <Banner></Banner>
         <Services></Services>
+        <MoreServices></MoreServices>
       </div>
     </>
   );
