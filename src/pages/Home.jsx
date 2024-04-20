@@ -1,4 +1,5 @@
 import Banner from "../components/Banner/Banner";
+import FacebookBranding from "../components/FacebookBranding/FacebookBranding";
 import MoreServices from "../components/MoreServices/MoreServices";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
@@ -15,6 +16,7 @@ const Home = () => {
         <Banner></Banner>
         <Services></Services>
         <MoreServices></MoreServices>
+        <FacebookBranding></FacebookBranding>
       </div>
     </>
   );
