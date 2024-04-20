@@ -19,7 +19,7 @@ const Navbar = () => {
         <a href="#">Ask Away</a>
       </li>
       <li className="nav-link">
-        <a href="#">Testimonials</a>
+        <a href="#Testimonials">Testimonials</a>
       </li>
     </>
   );
