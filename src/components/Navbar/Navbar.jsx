@@ -10,7 +10,7 @@ const Navbar = () => {
         <a href="#">About us</a>
       </li>
       <li className="nav-link">
-        <a href="#">Services</a>
+        <a href="#services">Services</a>
       </li>
       <li className="nav-link">
         <a href="#">Why Choose us</a>
@@ -24,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="pt-4 lg:pt-8 pb-4 sm:pb-12">
+    <nav className="py-4 lg:py-8 bg-white">
       <div className="flex justify-between items-center">
         <div className="sm:w-auto">
           <a href="/">

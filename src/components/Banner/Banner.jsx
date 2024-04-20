@@ -2,20 +2,21 @@ import { FaCheck } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 justify-between items-center bg-[#131514] rounded-xl px-[3.2rem] sm:px-[4.875rem] py-[4rem] sm:py-[5.6rem]">
+    <div className="flex flex-col md:flex-row gap-10 justify-between items-center bg-[#131514] rounded-xl px-[3.2rem] sm:px-[4.875rem] py-[4rem] sm:py-[5.6rem] sm:mt-4">
       <div className="text-white">
-        <p className="text-lg rounded-xl mx-auto sm:mx-0 bg-[#3F403F] px-3 py-1 w-fit">Flexible and Scalable</p>
-        <h1 className="text-[3rem] sm:text-[3.45rem] text-center sm:text-left lg:text-[3.4rem] xl:text-[3.65rem] leading-[3.7rem] sm:leading-[4.5rem] -tracking-[0.063rem] font-bold mt-4">
+        <p className="text-lg rounded-xl bg-[#3F403F] px-3 py-1 w-fit">Flexible and Scalable</p>
+        <h1 className="text-[3rem] sm:text-[3.45rem] lg:text-[3.4rem] xl:text-[3.65rem] leading-[3.7rem] sm:leading-[4.5rem] -tracking-[0.063rem] font-bold mt-4">
           <span className="text-[#0000f3]">Boost</span> Your Sales <br />
           with Pitch Right Today
         </h1>
-        <p className="max-w-[31.875rem] text-center sm:text-left text-lg leading-8 mt-2">
-          Unlock Your Business Potential with Pitch Right&apos;s Tailored Sales Support Services
-        </p>
-        <button className="btn leading-[1.5rem] sm:leading-none font-normal min-h-0 h-auto text-white border-none bg-[#0000f3] hover:bg-[#0000f3] hover:brightness-90 mt-10 w-fit px-10 py-4 rounded-xl">
+        <p className="max-w-[31.875rem] text-lg leading-8 mt-2">Unlock Your Business Potential with Pitch Right&apos;s Tailored Sales Support Services</p>
+        <label
+          htmlFor="name"
+          className="btn leading-[1.5rem] sm:leading-none font-normal min-h-0 h-auto text-white border-none bg-[#0000f3] hover:bg-[#0000f3] hover:brightness-90 mt-10 w-full sm:w-fit px-3 sm:px-10 py-4 rounded-xl"
+        >
           Complete the form and let Pitch Right Ltd help
-        </button>
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
+        </label>
+        <div className="flex flex-col sm:flex-row gap-4 mt-10">
           <div className="flex gap-2 items-center">
             <FaCheck className="text-xl text-[#0000f3]" />
             <p className="text-lg">No Credit Card</p>
@@ -36,6 +37,7 @@ const Banner = () => {
             {/* name */}
             <input
               type="text"
+              id="name"
               placeholder="Your name*"
               className="input bg-[#f0eeea] text-lg text-[#1d2b26] placeholder:text-lg placeholder:text-[#1d2b26] w-full"
             />

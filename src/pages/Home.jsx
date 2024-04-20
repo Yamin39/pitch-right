@@ -1,12 +1,20 @@
 import Banner from "../components/Banner/Banner";
 import Navbar from "../components/Navbar/Navbar";
+import Services from "../components/Services/Services";
 
 const Home = () => {
   return (
-    <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
-      <Navbar></Navbar>
-      <Banner></Banner>
-    </div>
+    <>
+      <div className="font-hanken bg-white sticky top-0 z-50">
+        <div className="max-w-[1201px] w-11/12 mx-auto">
+          <Navbar></Navbar>
+        </div>
+      </div>
+      <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
+        <Banner></Banner>
+        <Services></Services>
+      </div>
+    </>
   );
 };
 
