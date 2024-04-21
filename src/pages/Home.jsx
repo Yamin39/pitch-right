@@ -5,6 +5,7 @@ import MoreServices from "../components/MoreServices/MoreServices";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
 import Testimonials from "../components/Testimonials/Testimonials";
+import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
       <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
         <AboutUs></AboutUs>
+        <WhyChooseUs></WhyChooseUs>
       </div>
     </>
   );
