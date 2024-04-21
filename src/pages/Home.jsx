@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs/AboutUs";
 import Banner from "../components/Banner/Banner";
 import FacebookBranding from "../components/FacebookBranding/FacebookBranding";
 import MoreServices from "../components/MoreServices/MoreServices";
@@ -23,6 +24,9 @@ const Home = () => {
         <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
           <Testimonials></Testimonials>
         </div>
+      </div>
+      <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
+        <AboutUs></AboutUs>
       </div>
     </>
   );

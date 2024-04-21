@@ -7,7 +7,7 @@ const Navbar = () => {
   const links = (
     <>
       <li className="nav-link">
-        <a href="#">About us</a>
+        <a href="#AboutUs">About us</a>
       </li>
       <li className="nav-link">
         <a href="#services">Services</a>
