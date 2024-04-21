@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner";
 import BottomBanner from "../components/BottomBanner/BottomBanner";
 import FacebookBranding from "../components/FacebookBranding/FacebookBranding";
 import Faq from "../components/Faq/Faq";
+import Footer from "../components/Footer/Footer";
 import MoreServices from "../components/MoreServices/MoreServices";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
@@ -35,6 +36,11 @@ const Home = () => {
           <Faq></Faq>
         </div>
         <BottomBanner></BottomBanner>
+      </div>
+      <div className="bg-[#f0eeea]">
+        <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
+          <Footer></Footer>
+        </div>
       </div>
     </>
   );
