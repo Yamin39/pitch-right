@@ -1,6 +1,7 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import Banner from "../components/Banner/Banner";
 import FacebookBranding from "../components/FacebookBranding/FacebookBranding";
+import Faq from "../components/Faq/Faq";
 import MoreServices from "../components/MoreServices/MoreServices";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
@@ -29,7 +30,15 @@ const Home = () => {
       <div className="max-w-[1201px] w-11/12 mx-auto font-hanken">
         <AboutUs></AboutUs>
         <WhyChooseUs></WhyChooseUs>
+        <div className="relative">
+          <Faq></Faq>
+        </div>
+
+
+
+
       </div>
+        <div className="h-[300vh]"></div>
     </>
   );
 };
