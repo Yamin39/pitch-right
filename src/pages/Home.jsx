@@ -1,5 +1,6 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import Banner from "../components/Banner/Banner";
+import BottomBanner from "../components/BottomBanner/BottomBanner";
 import FacebookBranding from "../components/FacebookBranding/FacebookBranding";
 import Faq from "../components/Faq/Faq";
 import MoreServices from "../components/MoreServices/MoreServices";
@@ -33,12 +34,8 @@ const Home = () => {
         <div className="relative">
           <Faq></Faq>
         </div>
-
-
-
-
+        <BottomBanner></BottomBanner>
       </div>
-        <div className="h-[300vh]"></div>
     </>
   );
 };
