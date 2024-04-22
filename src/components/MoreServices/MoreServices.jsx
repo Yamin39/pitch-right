@@ -59,7 +59,7 @@ const MoreServices = () => {
             </h3>
             <p className="text-lg leading-8 mt-2">
               This service provides you with a dedicated number, which is marketed to ensure the phones keep ringing with potential customers. Using this
-              service we will actively market your business via email, search engines, and direct mailing to ensure your business a steady flow of qualified
+              service we will actively market your business via email, search engines, and direct mailing to ensure your business has a steady flow of qualified
               leads.
             </p>
           </div>
