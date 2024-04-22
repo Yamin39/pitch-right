@@ -50,6 +50,7 @@ const Banner = () => {
         () => {
           console.log("SUCCESS!");
           successToast("Form submitted successfully");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
