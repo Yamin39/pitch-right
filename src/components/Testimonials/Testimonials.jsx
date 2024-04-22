@@ -8,14 +8,11 @@ const Testimonials = () => {
         <div className="md:sticky md:top-[3.409rem] lg:top-[6.063rem] pt-[5.25rem]">
           <p className="text-lg text-[#3c3c3c] rounded-xl bg-white px-3 py-1 w-fit">Flexible and Scalable</p>
           <h1 className="max-w-[36.313rem] text-[3rem] sm:text-[3.95rem] text-[#3c3c3c] lg:text-[3.4rem] xl:text-[4.063rem] leading-[3.7rem] sm:leading-[4.5rem] -tracking-[0.063rem] font-bold mt-3">
-            Rave <span className="text-[#0000F3]">reviews</span> from thousands
+            Rave <span className="text-[#0000F3]">reviews</span> from clients
           </h1>
           <p className="max-w-[22.813rem] text-[1.188rem] leading-8 mt-2">
             Hear from our satisfied clients about their experience with our marketing solutions.
           </p>
-          <button className="btn h-auto min-h-0 rounded-xl mt-10 p-5 text-[1.188rem] text-white bg-[#3c3c3c] hover:bg-[#3c3c3c] hover:brightness-90">
-            Leave a Review
-          </button>
         </div>
       </div>
 

@@ -8,9 +8,8 @@ const BottomBanner = () => {
       <div className="text-white" data-aos="fade-up" data-aos-delay="100" data-aos-once={true}>
         <p className="text-lg rounded-xl bg-[#3F403F] px-3 py-1 w-fit">Last Call</p>
         <h1 className="text-[3rem] sm:text-[3.45rem] lg:text-[3.4rem] xl:text-[3.65rem] leading-[3.7rem] sm:leading-[4.5rem] -tracking-[0.063rem] font-bold mt-4">
-          Ready to <span className="text-[#0000f3]">elevate</span>
-          <br />
-          your marketing?
+          <span className="text-[#0000f3]">Boost</span> Your Sales <br />
+          with Pitch Right Today
         </h1>
         <p className="max-w-[31.875rem] text-lg leading-8 mt-2">Unlock Your Business Potential with Pitch Right&apos;s Tailored Sales Support Services</p>
         <label

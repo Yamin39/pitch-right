@@ -60,8 +60,8 @@ const Faq = () => {
           <div className="collapse-title after:text-[2rem] text-lg text-[#233831] font-medium">2. What are the risks?</div>
           <div className="collapse-content">
             <p className="leading-8 text-[#233831] font-light">
-              Sales are the life blood of any organisation, you however might not be a natural sales person. An in-house sales team may not be an option due to
-              associated costs such as salary, phone bill, insurance, C/Workstation, and training which makes the viability of business restrictive.
+              Trust, domain expertise and cost. However, experience has taught us that these rarely prove to be real issues. Pitch Right offer a transparent,
+              clear and comprehensive service.
             </p>
           </div>
         </div>
@@ -81,8 +81,8 @@ const Faq = () => {
           <div className="collapse-title after:text-[2rem] text-lg text-[#233831] font-medium">3. What are the benefits?</div>
           <div className="collapse-content">
             <p className="leading-8 text-[#233831] font-light">
-              Sales are the life blood of any organisation, you however might not be a natural sales person. An in-house sales team may not be an option due to
-              associated costs such as salary, phone bill, insurance, C/Workstation, and training which makes the viability of business restrictive.
+              Opt to partner with Pitch Right, we offer a wealth of experience; we can hit the ground running, offering a real value add service with no red
+              tape. For a cost perspective call us today and you will be surprised with what you can save and gain.
             </p>
           </div>
         </div>
@@ -102,8 +102,9 @@ const Faq = () => {
           <div className="collapse-title after:text-[2rem] text-lg text-[#233831] font-medium">4. What makes Pitch Right different?</div>
           <div className="collapse-content">
             <p className="leading-8 text-[#233831] font-light">
-              Sales are the life blood of any organisation, you however might not be a natural sales person. An in-house sales team may not be an option due to
-              associated costs such as salary, phone bill, insurance, C/Workstation, and training which makes the viability of business restrictive.
+              We are an affable company, maintaining a high level of professionalism with our clients. Pitch Right bring a refreshing vibe making engaging with
+              clients an enjoyable and enlightening experience. Unlike traditional telemarketing companies, we work in partnership with you to close every
+              opportunity we present. No crippling day rate charges or long term contracts, our approach is simple and transparent.
             </p>
           </div>
         </div>

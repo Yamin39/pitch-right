@@ -29,7 +29,7 @@ const Banner = () => {
       </div>
       <div>
         <div className="w-full sm:max-w-[27.125rem] p-7 sm:p-12 pt-[1.6rem] sm:pt-[3.75rem] rounded-[0.875rem] bg-white">
-          <h2 className="text-[2.063rem] text-[#1d2b26] font-bold">Get Free Preview</h2>
+          <h2 className="text-[2.063rem] text-[#1d2b26] font-bold">Get a Free Quote</h2>
           <p className="pt-1 max-w-[20.688rem] text-[#1d2b26] leading-8">
             Unlock Your Business Potential with Pitch Right Ltd&apos;s Tailored Sales Support Services
           </p>
