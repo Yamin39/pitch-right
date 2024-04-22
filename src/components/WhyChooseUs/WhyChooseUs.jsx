@@ -20,13 +20,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="px-5 sm:px-0">
-        <div
-          className="max-w-[37rem]"
-          data-aos={window.innerWidth > 768 ? "fade-left" : "fade-up"}
-          data-aos-delay="100"
-          data-aos-once={true}
-          data-aos-duration="800"
-        >
+        <div className="max-w-[37rem]" data-aos="fade-up" data-aos-delay="100" data-aos-once={true} data-aos-duration="800">
           <img className="w-full" src={handIcon} />
         </div>
       </div>

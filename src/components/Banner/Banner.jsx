@@ -1,6 +1,62 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import { FaCheck } from "react-icons/fa6";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Banner = () => {
+  const successToast = (sms) =>
+    toast.success(sms, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+
+  const errorToast = (sms) =>
+    toast.error(sms, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // email verification
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(form.current.from_email.value)) {
+      errorToast("Invalid email address");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_gfd7tyh", "template_tmtw303", form.current, {
+        publicKey: "MvBeRXTQqVAXJ1SIu",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          successToast("Form submitted successfully");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          errorToast("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="flex flex-col md:flex-row gap-10 justify-between items-center bg-[#131514] rounded-xl px-[3.2rem] sm:px-[4.875rem] py-[4rem] sm:py-[5.6rem] sm:mt-4">
       <div className="text-white">
@@ -33,30 +89,36 @@ const Banner = () => {
           <p className="pt-1 max-w-[20.688rem] text-[#1d2b26] leading-8">
             Unlock Your Business Potential with Pitch Right Ltd&apos;s Tailored Sales Support Services
           </p>
-          <form className="mt-6 space-y-5">
+          <form className="mt-6 space-y-5" ref={form} onSubmit={sendEmail}>
             {/* name */}
             <input
               type="text"
               id="name"
+              name="from_name"
               placeholder="Your name*"
               className="input bg-[#f0eeea] text-lg text-[#1d2b26] placeholder:text-lg placeholder:text-[#1d2b26] w-full"
+              required
+            />
+
+            {/* Phone number */}
+            <input
+              type="number"
+              placeholder="Phone number*"
+              name="from_phoneNumber"
+              className="input bg-[#f0eeea] text-lg text-[#1d2b26] placeholder:text-lg placeholder:text-[#1d2b26] w-full"
+              required
             />
 
             {/* email */}
             <input
               type="email"
-              placeholder="Phone number*"
-              className="input bg-[#f0eeea] text-lg text-[#1d2b26] placeholder:text-lg placeholder:text-[#1d2b26] w-full"
-            />
-
-            {/* password */}
-            <input
-              type="text"
               placeholder="eMail address*"
+              name="from_email"
               className="input bg-[#f0eeea] text-lg text-[#1d2b26] placeholder:text-lg placeholder:text-[#1d2b26] w-full"
+              required
             />
             <div className="flex items-center gap-2">
-              <input type="checkbox" id="checkbox" className="checkbox  checkbox-xs rounded-sm" />
+              <input type="checkbox" id="checkbox" name="checkbox" className="checkbox  checkbox-xs rounded-sm" required />
               <label htmlFor="checkbox" className="text-[#1d2b26]">
                 I agree to the privacy policy
               </label>
@@ -67,6 +129,19 @@ const Banner = () => {
           </form>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Bounce}
+      />
     </div>
   );
 };
